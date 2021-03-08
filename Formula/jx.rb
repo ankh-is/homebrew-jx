@@ -2,20 +2,20 @@
 class Jx < Formula
   desc "A tool to install and interact with Jenkins X on your Kubernetes cluster."
   homepage "https://jenkins-x.io/"
-  version "2.1.155"
+  version "3.1.293"
 
-  url "http://github.com/jenkins-x/jx/releases/download/v#{version}/jx-darwin-amd64.tar.gz"
-  sha256 "c151efdc8b5f95f3b588707c9425dfe1fbfb5c22a5f21650580ee6dbd37a9a42"
+  url "http://github.com/jenkins-x/jx-cli/releases/download/v#{version}/jx-darwin-amd64.tar.gz"
+  sha256 "fb3d48ded50516958035520b2d9d3fb06a6ec2b9f4d5694830c4c23cd89c29e4"
 
   def install
     bin.install name
-    
+
     output = Utils.popen_read("SHELL=bash #{bin}/jx completion bash")
     (bash_completion/"jx").write output
-    
+
     output = Utils.popen_read("SHELL=zsh #{bin}/jx completion zsh")
     (zsh_completion/"_jx").write output
-    
+
     prefix.install_metafiles
   end
 
