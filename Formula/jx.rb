@@ -4,7 +4,7 @@ class Jx < Formula
   homepage "https://jenkins-x.io/"
   version "3.1.293"
 
-  url "http://github.com/jenkins-x/jx-cli/releases/download/v#{version}/jx-darwin-amd64.tar.gz"
+  url "http://github.com/jenkins-x/jx-cli/releases/download/v#{version}/jx-cli-darwin-amd64.tar.gz"
   sha256 "fb3d48ded50516958035520b2d9d3fb06a6ec2b9f4d5694830c4c23cd89c29e4"
 
   def install

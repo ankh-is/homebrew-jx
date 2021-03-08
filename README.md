@@ -5,7 +5,7 @@ This is the homebrew repo for installing the jx client for jenkins-x
 
 ```
 $ brew install minikube
-$ brew tap ankh-is/jx-cli
-$ brew install ankh-is/jx-cli/jx
+$ brew tap ankh-is/jx
+$ brew install ankh-is/jx/jx
 ```
 
